@@ -10,7 +10,6 @@ public class SiuDevice {
 
     }
     private Connection connection_state;
-
     private int serial_num;
 
 }

@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <intager name="DEFAULT_CONTROL_SOURCE" > 0 </intager>   <!-- источник управления 0-входы, 1-модбас, 2-смешанный -->
+    <intager name="DEFAULT_LED_WORK_COUNT" > 4 </intager>   <!-- количество бегущих огней от 1 до 4 -->
+    <intager name="DEFAULT_BRIGHTNESS" > 100 </intager>     <!-- яркость от 0 до 100% -->
+    <intager name="DEFAULT_LED_SPEED" > 70 </intager>       <!-- скорость бегущих огней от 0 до 100% -->
+    <intager name="DEFAULT_BUZZER_ON_TIME" > 500 </intager> <!-- время писка излучателя от 200 до 2000мс -->
+    <intager name="DEFAULT_BUZZER_OFF_TIME" > 500 </intager><!-- время паузы излучателя от 200 до 2000мс -->
+    <intager name="DEFAULT_PRIORITY_INPUT1" > 3 </intager>  <!-- приоритет входа от 1 до 3 -->
+    <intager name="DEFAULT_PRIORITY_INPUT2" > 2 </intager>  <!-- приоритет входа от 1 до 3 -->
+    <intager name="DEFAULT_PRIORITY_INPUT3" > 1 </intager>  <!-- приоритет входа от 1 до 3 -->
+    <intager name="DEFAULT_INVERT_INPUT1" > 0 </intager>    <!-- инверсия входа 1 - нет инверсии 0 - есть инверсия -->
+    <intager name="DEFAULT_INVERT_INPUT2" > 1 </intager>    <!--  -->
+    <intager name="DEFAULT_INVERT_INPUT3" > 1 </intager>    <!--  -->
+    <intager name="DEFAULT_INPUT1_BUZ" > 1 </intager>       <!-- писк при срабатывании входа 1 -->
+    <intager name="DEFAULT_INPUT2_BUZ" > 0 </intager>       <!--  -->
+    <intager name="DEFAULT_INPUT3_BUZ" > 0 </intager>       <!--  -->
+    <intager name="DEFAULT_INPUT1_RELAY" > 1 </intager>     <!-- реле подтверждения при срабатывании входа 1 -->
+    <intager name="DEFAULT_INPUT2_RELAY" > 0 </intager>     <!--  -->
+    <intager name="DEFAULT_INPUT3_RELAY" > 0 </intager>     <!--  -->
+    <intager name="DEFAULT_WORK_MODE_REG" > 10 </intager>   <!-- текущий режим -->
+    <intager name="DEFAULT_VOLUME" > 1 </intager>           <!-- текущий уровень громкости -->
+    <intager name="DEFAULT_RS_LINK" > 0 </intager>          <!-- функция RS Link -->
+    <intager name="DEFAULT_RS_LINK_TIME" > 3 </intager>     <!-- время смены режима после последнего опроса -->
+    <intager name="DEFAULT_RS_LIN_WORK_MODE" > 11 </intager><!--  -->
+
+    <intager name="CONTROL_SOURCE_MAX_VALUE" > 2 </intager>
+    <intager name="CONTROL_SOURCE_MIN_VALUE" > 0 </intager>
+
+    <intager name="LED_WORK_COUNT_MAX_VALUE" > 4 </intager>
+    <intager name="LED_WORK_COUNT_MIN_VALUE" > 1 </intager>
+
+    <intager name="BRIGHTNESS_MAX_VALUE" > 100 </intager>
+    <intager name="BRIGHTNESS_MIN_VALUE" > 0 </intager>
+
+    <intager name="LED_SPEED_MAX_VALUE" > 100 </intager>
+    <intager name="LED_SPEED_MIN_VALUE" > 0 </intager>
+
+    <intager name="BUZZER_ON_TIME_MAX_VALUE" > 2000 </intager>
+    <intager name="BUZZER_ON_TIME_MIN_VALUE" > 200 </intager>
+
+    <intager name="BUZZER_OFF_TIME_MAX_VALUE" > 2000 </intager>
+    <intager name="BUZZER_OFF_TIME_MIN_VALUE" > 200 </intager>
+
+    <intager name="PRIORITY_INPUT_MAX_VALUE" > 3 </intager>
+    <intager name="PRIORITY_INPUT_MIN_VALUE" > 1 </intager>
+
+    <intager name="INVERT_INPUT_MAX_VALUE" > 1 </intager>
+    <intager name="INVERT_INPUT_MIN_VALUE" > 0 </intager>
+
+    <intager name="INPUT_BUZ_MAX_VALUE" > 1 </intager>
+    <intager name="INPUT_BUZ_MIN_VALUE" > 0 </intager>
+
+    <intager name="INPUT_RELAY_MAX_VALUE" > 1 </intager>
+    <intager name="INPUT_RELAY_MIN_VALUE" > 0 </intager>
+
+    <intager name="WORK_MODE_REG_MAX_VALUE" > 13 </intager>
+    <intager name="WORK_MODE_REG_MIN_VALUE" > 10 </intager>
+
+    <intager name="WORK_VOLUME_MAX_VALUE" > 1 </intager>
+    <intager name="WORK_VOLUME_MIN_VALUE" > 0 </intager>
+
+    <intager name="RS_LINK_MAX_VALUE" > 1 </intager>
+    <intager name="RS_LINK_MIN_VALUE" > 0 </intager>
+
+    <intager name="RS_LINK_TIME_MAX_VALUE" > 255 </intager>
+    <intager name="RS_LINK_TIME_MIN_VALUE" > 0 </intager>
+
+    <intager name="RS_LINK_MODE_MAX_VALUE" > 13 </intager>
+    <intager name="RS_LINK_MODE_MIN_VALUE" > 10 </intager>
+</resources>
