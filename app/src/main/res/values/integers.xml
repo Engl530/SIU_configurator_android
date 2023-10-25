@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
+    <!-- значения по умолчанию -->
     <intager name="DEFAULT_CONTROL_SOURCE" > 0 </intager>   <!-- источник управления 0-входы, 1-модбас, 2-смешанный -->
     <intager name="DEFAULT_LED_WORK_COUNT" > 4 </intager>   <!-- количество бегущих огней от 1 до 4 -->
     <intager name="DEFAULT_BRIGHTNESS" > 100 </intager>     <!-- яркость от 0 до 100% -->
@@ -24,6 +25,12 @@
     <intager name="DEFAULT_RS_LINK_TIME" > 3 </intager>     <!-- время смены режима после последнего опроса -->
     <intager name="DEFAULT_RS_LIN_WORK_MODE" > 11 </intager><!--  -->
 
+    <intager name="DEFAULT_UART_OWN_ID" > 1 </intager><!--  -->
+    <intager name="DEFAULT_UART_SPEED" > 9600 </intager><!--  -->
+    <intager name="DEFAULT_UART_PARITY" > 4 </intager><!--  -->
+    <intager name="DEFAULT_UART_STOPBITS" > 0 </intager><!--  -->
+
+    <!-- максимальные и минимальные значения параметров работы -->
     <intager name="CONTROL_SOURCE_MAX_VALUE" > 2 </intager>
     <intager name="CONTROL_SOURCE_MIN_VALUE" > 0 </intager>
 
@@ -68,4 +75,11 @@
 
     <intager name="RS_LINK_MODE_MAX_VALUE" > 13 </intager>
     <intager name="RS_LINK_MODE_MIN_VALUE" > 10 </intager>
+
+    <intager name="OWN_ID_MAX_VALUE" > 255 </intager>
+    <intager name="OWN_ID_MIN_VALUE" > 0 </intager>
+
+    <intager name="SERIAL_NUM_MAX_VALUE" > 9999 </intager>
+    <intager name="SERIAL_NUM_MIN_VALUE" > 0 </intager>
+
 </resources>
