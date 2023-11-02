@@ -8,10 +8,12 @@ public class SiuDevice {
         CONNECTED,
         DISCONNECTING
     }
-//------------------
+//----------------------------------------------------------------------------
     private Connection connection_state = Connection.CONNECTED;
     private boolean bus_busy = false;
     private int serial_num = 0;
+    private int[] rxBuf = new int[256];
+    private boolean rxBufReadedFlag;
     private static final int[] baud_rates_list = new int[]{9600, 19200,4800,2400}; //поддерживаемые скорости
     private static final int[] parity_list = new int[]{0, 2,1}; // 0 - NONE; 1 - ODD; 2 - EVEN
     private static final int[] stop_bits_list = new int[]{0, 1,2};// 0 - 1stop; 1 - 1.5stop; 2 - 2stop
@@ -31,18 +33,20 @@ public class SiuDevice {
     private final int INDEX_COMMAND_NEG = 1;
     private final int INDEX_SERIALNUMBER_H = 2;
     private final int INDEX_SERIALNUMBER_L = 3;
-    //------------------
+//----------------------------------------------------------------------------
     public SiuDevice(){
 
     }
-    public boolean connect(){
-        if(this.connection_state == Connection.CONNECTED) return true;
-        else if (this.connection_state == Connection.DISCONNECTING || this.connection_state == Connection.CONNECTING) return false;
-        this.connection_state = Connection.CONNECTING;
+    public void connect(){
+        if(connection_state != Connection.CONNECTING) return;
+        connection_state = Connection.CONNECTING;
 
-
-        return false;
     }
+
+    public Connection getConnectionState() {
+        return connection_state;
+    }
+
     private int crc16(int[] buf, int lenth){
         int crc16 = 0xFFFF;
         int ui16 = 0xA001;
